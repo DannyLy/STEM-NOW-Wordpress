@@ -1,0 +1,314 @@
+
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans&subset=latin,latin-ext,cyrillic);
+#snbrowser-container1 { 
+	zoom: 1; 
+	position: relative;
+	width: 100%;
+	max-width:100%;
+	max-height:none;
+	margin:0px auto 0px;
+	z-index:90;
+	border:2px solid #26B1AA;
+	text-align:left;
+	font-size: 10px;
+}
+* html #snbrowser-container1{ width:830px }
+#snbrowser-container1 .sn_images ul{
+	position:relative;
+	width: 10000%; 
+	height:100%;
+	left:0;
+	list-style:none;
+	margin:0;
+	padding:0;
+	border-spacing:0;
+	overflow: visible;
+}
+#snbrowser-container1 .sn_images ul li{
+	position: relative;
+	width:1%;
+	height:100%;
+	line-height:0;
+	overflow: hidden;
+	float:left;
+	font-size:0;
+	padding:0 0 0 0;
+	margin:0 0 0 0;
+}
+
+#snbrowser-container1 .sn_images{
+	position: relative;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	max-height:none;
+	overflow:hidden;
+}
+#snbrowser-container1 .sn_images a{
+	width:100%;
+	height:100%;
+	max-height:none;
+	display:block;
+	color:transparent;
+}
+#snbrowser-container1 img{
+	max-width: none;
+}
+#snbrowser-container1 .sn_images img{
+	width:100%;
+	border:none 0;
+	max-width: none;
+	padding:0;
+	margin:0;
+}
+
+#snbrowser-container1 .sn_images iframe {
+	position: absolute;
+	z-index: -1;
+}
+
+#snbrowser-container1 .sn-title > div {
+	display: inline-block;
+}
+
+#snbrowser-container1 a{ 
+	text-decoration: none; 
+	outline: none; 
+	border: none; 
+}
+
+#snbrowser-container1  .sn_bullets { 
+	float: left;
+	position:absolute;
+	z-index:70;
+}
+#snbrowser-container1  .sn_bullets div{
+	position:relative;
+	float:left;
+	font-size: 0px;
+}
+#snbrowser-container1  .snl{
+	display:none;
+}
+#snbrowser-container1 sound, 
+#snbrowser-container1 object{
+	position:absolute;
+}
+
+/* preventing reset styles */
+#snbrowser-container1 .sn_effect {
+	position: static;
+}
+
+#snbrowser-container1 .sn_photoItem {
+	background: #fff;
+}
+#snbrowser-container1 .sn_photoItem > div {
+	left: 2em;
+	right: 2em;
+	top: 2em;
+	bottom: 2em;
+}
+
+/* hide play bar when video starts play */
+#snbrowser-container1.sn_video_playing .sn_bullets {
+	display: none;
+}
+#snbrowser-container1.sn_video_playing:hover .sn_bullets {
+	display: block;
+}
+
+/* youtube buttons */
+#snbrowser-container1 .sn_video_btn {
+	position: absolute;
+	display: none;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 55;
+}
+#snbrowser-container1 .sn_video_btn.sn_vimeo {
+	display: block;
+}
+#snbrowser-container1 .sn_video_btn div {
+	position: absolute;
+	background-image: url(..//stemnow_files/playvideo.png);
+	background-size: 200%;
+	top: 50%;
+	left: 50%;
+	width: 7em;
+	height: 5em;
+	margin-left: -3.5em;
+	margin-top: -2.5em;
+}
+#snbrowser-container1 .sn_video_btn.sn_youtube div {
+	background-position: 0 0;
+}
+#snbrowser-container1 .sn_video_btn.sn_youtube:hover div {
+	background-position: 100% 0;
+}
+
+#snbrowser-container1 .sn_playpause.sn_hide {
+	display: none;
+}
+#snbrowser-container1 { 
+	border-left: 0px;
+	border-right: 0px;
+} 
+#snbrowser-container1  .sn_bullets { 
+	padding: 5px; 
+}
+#snbrowser-container1 .sn_bullets a { 
+	width:12px;
+	height:12px;
+	background: url(..//stemnow_files/bullet.png) left top;
+	float: left; 
+	text-indent: -4000px; 
+	position:relative;
+	margin-left:6px;
+	color:transparent;
+}
+#snbrowser-container1 .sn_bullets a:hover, #snbrowser-container1 .sn_bullets a.sn_selbull{ 
+	background-position: 0 100%;
+}	
+#snbrowser-container1 a.sn_next, #snbrowser-container1 a.sn_prev {
+	position:absolute;
+	top:50%;
+	margin-top:-3.2em;
+	z-index:60;
+	height: 6.5em;
+	width: 6.5em;
+	background-image: url(..//stemnow_files/arrows.png);
+	background-size: 200%;
+}
+#snbrowser-container1 a.sn_next{
+	background-position: 100% 0;
+	right:0;
+}
+#snbrowser-container1 a.sn_prev {
+	left:0;
+	background-position: 0 0;
+}
+#snbrowser-container1 a.sn_next:hover{
+	background-position: 100% 100%;
+}
+#snbrowser-container1 a.sn_prev:hover {
+	background-position: 0 100%; 
+}
+
+/*playpause*/
+#snbrowser-container1 .sn_playpause {
+    width: 6.5em;
+    height: 6.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -3.2em;
+    margin-top: -3.2em;
+    z-index: 59;
+}
+
+#snbrowser-container1 .sn_pause {
+    background-image: url(..//stemnow_files/pause.png);
+	background-size: 100%; 
+}
+
+#snbrowser-container1 .sn_play {
+    background-image: url(..//stemnow_files/play.png);
+	background-size: 100%; 
+}
+
+#snbrowser-container1 .sn_pause:hover, #snbrowser-container1 .sn_play:hover {
+    background-position: 100% 100%;
+}/* bottom right */
+#snbrowser-container1  .sn_bullets {
+    bottom: 0px;
+	right: 5px;
+}
+
+#snbrowser-container1 .sn-title{
+	position:absolute;
+	display:block;
+	bottom: 2em;
+	left: 0;
+	margin-right:2em;
+	color:#26B1AA;	
+	z-index: 50;
+	font-family:'Noto Sans', Helvetica, Arial, sans-serif;
+	text-transform: none;
+}
+#snbrowser-container1 .sn-title div,#snbrowser-container1 .sn-title span{
+	display:inline-block;
+	background:#FFFFFF;
+	padding:0.4em;
+	-webkit-border-radius:0 5px 5px 0;
+	-moz-border-radius:0 5px 5px 0;
+	-ms-border-radius:0 5px 5px 0;
+	-o-border-radius:0 5px 5px 0;
+	border-radius:0 5px 5px 0;
+}
+#snbrowser-container1 .sn-title div{
+	display:block;
+	margin-top:0.5em;
+	font-size: 1.5em;
+	background:#26B1AA;
+	color:#FFFFFF;
+}
+#snbrowser-container1 .sn-title span{
+	font-size: 3em;
+}#snbrowser-container1 .sn_images > ul{
+	animation: wsBasic 4.9s infinite;
+	-moz-animation: wsBasic 4.9s infinite;
+	-webkit-animation: wsBasic 4.9s infinite;
+}
+@keyframes wsBasic{0%{left:-0%} 59.18%{left:-0%} }
+@-moz-keyframes wsBasic{0%{left:-0%} 59.18%{left:-0%} }
+@-webkit-keyframes wsBasic{0%{left:-0%} 59.18%{left:-0%} }
+
+#snbrowser-container1 .sn_bullets  a img{
+	text-indent:0;
+	display:block;
+	bottom:20px;
+	left:-55px;
+	visibility:hidden;
+	position:absolute;
+    border: 2px solid #5d5d5d;
+	max-width:none;
+}
+#snbrowser-container1 .sn_bullets a:hover img{
+	visibility:visible;
+}
+
+#snbrowser-container1 .sn_bulframe div div{
+	height:48px;
+	overflow:visible;
+	position:relative;
+}
+#snbrowser-container1 .sn_bulframe div {
+	left:0;
+	overflow:hidden;
+	position:relative;
+	width:110px;
+	background-color:#5d5d5d;
+}
+#snbrowser-container1  .sn_bullets .sn_bulframe{
+	display:none;
+	bottom:18px;
+	overflow:visible;
+	position:absolute;
+	cursor:pointer;
+    border: 2px solid #5d5d5d;
+}
+#snbrowser-container1 .sn_bulframe span{
+	display:block;
+	position:absolute;
+	bottom:-8px;
+	margin-left:-1px;
+	left:55px;
+	background:url(..//stemnow_files/triangle.png);
+	width:11px;
+	height:7px;
+}
